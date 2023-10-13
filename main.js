@@ -2,11 +2,10 @@ import users  from "/users.js"
 
 // =====1=====
 
-let nameArray = [];
-users.forEach(user => {
-    nameArray.push(user.name)
-})
-console.log(nameArray)
+const getUserNames = users => {
+  return users.map(name => name.name)
+}
+console.log(getUserNames(users))
 
 // =====2=====
 
